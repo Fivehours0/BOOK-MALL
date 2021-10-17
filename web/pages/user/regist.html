@@ -81,7 +81,7 @@
 								<span class="errorMsg"></span>
 							</div>
 							<div class="form">
-								<form action="regist_success.html">
+								<form action="http://localhost:8080/registServlet" method="post">
 									<label>用户名称：</label>
 									<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
 									<br />
@@ -99,7 +99,7 @@
 									<br />
 									<br />
 									<label>验证码：</label>
-									<input class="itxt" type="text" style="width: 150px;" id="code"/>
+									<input class="itxt" type="text" style="width: 150px;" id="code" name="code"/>
 									<img alt="" src="../../static/img/code.bmp" style="float: right; margin-right: 40px">									
 									<br />
 									<br />
