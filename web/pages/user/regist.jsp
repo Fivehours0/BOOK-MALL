@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -81,7 +82,8 @@
 								<span class="errorMsg"></span>
 							</div>
 							<div class="form">
-								<form action="http://localhost:8080/registServlet" method="post">
+								<form action="http://localhost:8080/userServlet" method="post">
+									<input type="hidden" name="action" value="regist">
 									<label>用户名称：</label>
 									<input class="itxt" type="text" placeholder="请输入用户名" autocomplete="off" tabindex="1" name="username" id="username" />
 									<br />
@@ -112,10 +114,6 @@
 					</div>
 				</div>
 			</div>
-		<div id="bottom">
-			<span>
-				尚硅谷书城.Copyright &copy;2015
-			</span>
-		</div>
+		<%@ include file="/pages/common/footer.jsp"%>
 </body>
 </html>

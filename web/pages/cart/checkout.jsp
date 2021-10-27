@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,12 +17,8 @@
 	<div id="header">
 			<img class="logo_img" alt="" src="../../static/img/logo.gif" >
 			<span class="wel_word">结算</span>
-			<div>
-				<span>欢迎<span class="um_span">韩总</span>光临尚硅谷书城</span>
-				<a href="../order/order.html">我的订单</a>
-				<a href="../../index.html">注销</a>&nbsp;&nbsp;
-				<a href="../../index.html">返回</a>
-			</div>
+			<%--		静态包含登录成功之后的菜单栏内容--%>
+			<%@ include file="/pages/common/login_success_menu.jsp"%>
 	</div>
 	
 	<div id="main">
@@ -30,11 +27,7 @@
 		
 	
 	</div>
-	
-	<div id="bottom">
-		<span>
-			尚硅谷书城.Copyright &copy;2015
-		</span>
-	</div>
+
+	<%@ include file="/pages/common/footer.jsp"%>
 </body>
 </html>
